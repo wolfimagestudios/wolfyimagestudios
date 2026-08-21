@@ -5,7 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="Others/wolfy image studios logo.png" type="image/x-icon" />
-  <title>Wolfy Image Studios</title>
+  <meta name="description" content="Wolfy Image Studios offers professional studio, outdoor, wedding and event photography, videography, live streaming, photo mounts and frames in Maimahiu, Kenya.">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:title" content="Wolfy Image Studios | Photography & Videography">
+  <meta property="og:description" content="Professional photography, weddings, events, videography, live streaming and photo printing services in Maimahiu, Kenya.">
+  <meta property="og:type" content="website">
+  <title>Wolfy Image Studios | Photography & Videography</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +18,7 @@
 
   <!-- --- PRELOADER --- -->
   <div id="preloader">
-    <img src="Others/loader.jpg" alt="Loading...">
+    <img src="Others/loader.jpg" alt="Loading..." loading="eager">
   </div>
 
   <!-- --- TOP BAR --- -->
@@ -21,22 +26,73 @@
     <p><span class="desktop-text"></span>Welcome to Wolfy Image Studios | Capturing Moments with Style</p>
   </div>
 
-  <nav>
-    <ul>
-      <li><a href="#indoor-portfolio">Indoor</a></li>
-      <li><a href="#outdoor-portfolio">Outdoor</a></li>
-      <li><a href="#photo-mounts">Mounts</a></li>
-      <li><a href="#photo-frames">Frames</a></li>
-      <li><a href="#events-portfolio">Events</a></li>
-      <li><a href="#wedding-portfolio">Weddings</a></li>
+  <nav id="main-nav">
+    <a class="nav-brand" href="#home" aria-label="Wolfy Image Studios home">WOLFY <span>IMAGE</span></a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    <ul id="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#featured-work">Portfolio</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="nav-book" href="https://api.whatsapp.com/send?phone=254706483664&text=Hello%20Wolfy%20Image%20Studios!%20I%20would%20like%20to%20book%20a%20session." target="_blank" rel="noopener noreferrer">Book Now</a></li>
     </ul>
   </nav>
 
-  <header>
-    <h1>Wolfy Image Studios</h1>
-    <p>Professional photography capturing moments with style, precision, and creativity.</p>
-
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>Wolfy Image Studios</h1>
+      <p class="hero-lead">We don't just take photographs. We create memories that last.</p>
+      <div class="hero-actions">
+        <a class="hero-btn hero-btn-primary" href="https://api.whatsapp.com/send?phone=254706483664&text=Hello%20Wolfy%20Image%20Studios!%20I%20would%20like%20to%20book%20a%20session." target="_blank" rel="noopener noreferrer">Book a Session</a>
+        <a class="hero-btn hero-btn-secondary" href="#featured-work">View Our Work</a>
+      </div>
+      <div class="hero-meta"><span>📍 Maimahiu, Kenya</span><span>💬 Easy WhatsApp Booking</span><span>🎥 Photo & Video</span></div>
+    </div>
+    <a class="scroll-cue" href="#services" aria-label="Scroll to services">Scroll to explore ↓</a>
   </header>
+
+  <section id="services" class="services-section">
+    <div class="section-heading">
+      <p class="eyebrow">WHAT WE DO</p>
+      <h2 class="title">Our Services</h2>
+      <p class="section-intro">Choose a service and let us turn your idea, event or special moment into something worth keeping.</p>
+    </div>
+    <div class="services-grid">
+      <a class="service-card" href="#indoor-portfolio"><span class="service-icon">📸</span><h3>Studio Photography</h3><p>Portraits, family, fashion and creative studio sessions.</p><span>Explore Studio →</span></a>
+      <a class="service-card" href="#outdoor-portfolio"><span class="service-icon">🌿</span><h3>Outdoor Photography</h3><p>Relaxed lifestyle and outdoor portrait sessions.</p><span>Explore Outdoor →</span></a>
+      <a class="service-card" href="#wedding-portfolio"><span class="service-icon">💍</span><h3>Weddings</h3><p>Wedding photography, cinema, albums and premium deliverables.</p><span>Explore Weddings →</span></a>
+      <a class="service-card" href="#events-portfolio"><span class="service-icon">🎉</span><h3>Events</h3><p>Professional coverage for birthdays, corporate events and celebrations.</p><span>Explore Events →</span></a>
+      <a class="service-card" href="#wedding-cinema"><span class="service-icon">🎥</span><h3>Videography</h3><p>Cinematic event videos, wedding cinema and highlight films.</p><span>Watch Cinema →</span></a>
+      <a class="service-card" href="#photo-mounts"><span class="service-icon">🖼️</span><h3>Prints & Frames</h3><p>Turn your digital memories into mounts, frames and albums.</p><span>See Products →</span></a>
+    </div>
+  </section>
+
+  <section id="featured-work" class="featured-section">
+    <div class="section-heading">
+      <p class="eyebrow">OUR WORK</p>
+      <h2 class="title">Featured Portfolio</h2>
+      <p class="section-intro">A selection of the photography and cinema work available through Wolfy Image Studios.</p>
+    </div>
+    <div class="featured-grid">
+      <a href="#indoor-portfolio" class="featured-tile featured-tile-large"><img src="Indoor/Artificial/indoor1.jpeg" alt="Studio portrait photography by Wolfy Image Studios" loading="lazy"><span>Studio</span></a>
+      <a href="#outdoor-portfolio" class="featured-tile"><img src="Outdoor/outdoor3.jpeg" alt="Outdoor portrait photography by Wolfy Image Studios" loading="lazy"><span>Outdoor</span></a>
+      <a href="#wedding-portfolio" class="featured-tile"><img src="Wedding/Wedding1.jpg" alt="Wedding photography by Wolfy Image Studios" loading="lazy"><span>Weddings</span></a>
+      <a href="#events-portfolio" class="featured-tile"><img src="Events/Event1.jpeg" alt="Event photography by Wolfy Image Studios" loading="lazy"><span>Events</span></a>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-image"><img src="Others/back.jpg" alt="Wolfy Image Studios creative photography setup" loading="lazy"></div>
+    <div class="about-copy">
+      <p class="eyebrow">ABOUT WOLFY</p>
+      <h2>Professional photography with a personal touch.</h2>
+      <p>Wolfy Image Studios is built around creative photography, videography and quality photo products. From studio portraits to weddings and events, our goal is to give every client images they will be proud to share and keep.</p>
+      <div class="about-points"><div><strong>📸</strong><span>Creative photography</span></div><div><strong>🎬</strong><span>Professional video</span></div><div><strong>⚡</strong><span>Clear delivery schedules</span></div><div><strong>💬</strong><span>Simple WhatsApp booking</span></div></div>
+      <a class="text-link" href="#contact">Get in touch →</a>
+    </div>
+  </section>
   
   <!-- INDOOR GALLERY - ARTIFICIAL BACKGROUNDS -->
   <section id="indoor-portfolio">
@@ -51,30 +107,37 @@
 
     <h3 class="indoor-sub-title">Artificial Backgrounds Gallery</h3>
     <div class="portfolio">
-      <div class="item1"><img src="Indoor/Artificial/indoor1.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor2.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor3.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor4.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor5.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor6.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor7.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor8.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor9.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor10.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor11.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor12.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor13.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor14.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor15.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor16.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor17.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor18.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor19.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor20.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor21.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor22.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor23.jpeg" alt="Indoor Artificial"></div>
-      <div class="item1"><img src="Indoor/Artificial/indoor24.jpeg" alt="Indoor Artificial"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor1.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor2.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor3.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor4.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor5.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor6.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor7.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor8.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor9.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor10.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor11.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor12.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor13.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor14.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor15.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor16.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor17.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor18.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor19.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor20.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor21.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor22.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor23.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor24.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor25.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor26.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor27.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor28.jpeg" alt="Indoor Artificial" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Artificial/indoor29.jpeg" alt="Indoor Artificial" loading="lazy"></div>     
+      <div class="item1"><img src="Indoor/Artificial/indoor30.jpeg" alt="Indoor Artificial" loading="lazy"></div>    
+    </div>
     </div>
 
     <!-- Artificial pricing note -->
@@ -137,34 +200,36 @@
     <!-- PLAIN BACKGROUNDS -->
     <h3 class="indoor-sub-title">Plain Backgrounds Gallery</h3>
     <div class="portfolio">
-      <div class="item1"><img src="Indoor/Plain/indoor1.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor2.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor3.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor4.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor26.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor6.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor7.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor8.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor9.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor10.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor11.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor12.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor13.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor14.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor15.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor16.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor17.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor18.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor19.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor20.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor21.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor22.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor23.jpeg" alt="Indoor Plain"></div>
-      <div class="item1"><img src="Indoor/Plain/indoor24.jpeg" alt="Indoor Plain"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor1.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor2.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor3.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor4.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor26.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor6.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor7.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor8.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor9.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor10.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor11.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor12.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor13.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor14.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor15.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor16.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor17.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor18.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor19.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor20.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor21.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor22.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor23.jpeg" alt="Indoor Plain" loading="lazy"></div>
+      <div class="item1"><img src="Indoor/Plain/indoor24.jpeg" alt="Indoor Plain" loading="lazy"></div>
     </div>
   </section>
 
-  <section id="indoor-packages" class="packages-section">
+  <section id="pricing" class="pricing-overview"><p class="eyebrow">SIMPLE & CLEAR</p><h2 class="title">Packages & Pricing</h2><p class="section-intro">Choose the service you need below. Every package has a direct WhatsApp booking option.</p></section>
+
+  <section id="indoor-packages" class="packages-section pricing-anchor">
     <h2 class="title">Plain Background Prices</h2>
     <div class="packages-content">
 
@@ -299,26 +364,26 @@
   <section id="outdoor-portfolio">
     <h2 class="title">Outdoor Gallery</h2>
     <div class="portfolio">
-      <div class="item"><img src="Outdoor/outdoor 1.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor 2.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor3.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor4.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor5.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor6.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor7.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor8.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor9.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor10.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor11.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor12.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor13.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor14.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor15.jpeg" alt="Outdoor"></div>
-      <div class="item"><img src="Outdoor/outdoor16.jpeg" alt="Outdoor"></div>
+      <div class="item"><img src="Outdoor/outdoor 1.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor 2.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor3.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor4.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor5.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor6.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor7.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor8.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor9.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor10.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor11.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor12.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor13.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor14.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor15.jpeg" alt="Outdoor" loading="lazy"></div>
+      <div class="item"><img src="Outdoor/outdoor16.jpeg" alt="Outdoor" loading="lazy"></div>
     </div>
   </section>
 
-  <section id="outdoor-packages" class="packages-section">
+  <section id="outdoor-packages" class="packages-section pricing-anchor">
     <h2 class="title">Outdoor Photography Packages</h2>
     <div class="packages-content">
 
@@ -388,7 +453,7 @@
         WITH WATER AND SUN PROOF.</p>
       <div style="text-align: center; margin-bottom: 20px;">
         <img src="Images/mountsizes2.avif.jpg" alt="Photo Mount Sizes"
-          style="max-width: 100%; height: auto; border-radius: 10px;">
+          style="max-width: 100%; height: auto; border-radius: 10px;" loading="lazy">
       </div>
       <div class="table-container">
       <table style="max-width: 600px; margin: 20px auto;">
@@ -435,7 +500,7 @@
       <p style="text-align: center;">Elegant frames in standard sizes. Custom sizes available on request.</p>
       <div style="text-align: center; margin-bottom: 20px;">
         <img src="Images/pictureframessizes.jpg" alt="Photo Frame Sizes"
-          style="max-width: 100%; height: auto; border-radius: 10px;">
+          style="max-width: 100%; height: auto; border-radius: 10px;" loading="lazy">
       </div>
       <div class="table-container">
       <table style="max-width: 600px; margin: 20px auto;">
@@ -479,22 +544,22 @@
   <section id="events-portfolio">
     <h2 class="title">Events Gallery</h2>
     <div class="portfolio">
-      <div class="item"><img src="Events/Event1.jpeg" alt="Event"></div>
-      <div class="item"><img src="Events/Event2.jpeg" alt="Event"></div>
-      <div class="item"><img src="Events/Event3.jpeg" alt="Event"></div>
-      <div class="item"><img src="Events/Event4.jpeg" alt="Event"></div>
-      <div class="item"><img src="Events/Event5.jpeg" alt="Event"></div>
-      <div class="item"><img src="Events/Event6.jpeg" alt="Event"></div>
-      <div class="item"><img src="Events/Event7.jpeg" alt="Event"></div>
-      <div class="item"><img src="Events/Event8.jpeg" alt="Event"></div>
-      <div class="item"><img src="Events/Event9.jpeg" alt="Event"></div>
-      <div class="item"><img src="Events/Event10.jpeg" alt="Event"></div>
-      <div class="item"><img src="Events/Event11.jpeg" alt="Event"></div>
-      <div class="item"><img src="Events/Event12.jpeg" alt="Event"></div>
+      <div class="item"><img src="Events/Event1.jpeg" alt="Event" loading="lazy"></div>
+      <div class="item"><img src="Events/Event2.jpeg" alt="Event" loading="lazy"></div>
+      <div class="item"><img src="Events/Event3.jpeg" alt="Event" loading="lazy"></div>
+      <div class="item"><img src="Events/Event4.jpeg" alt="Event" loading="lazy"></div>
+      <div class="item"><img src="Events/Event5.jpeg" alt="Event" loading="lazy"></div>
+      <div class="item"><img src="Events/Event6.jpeg" alt="Event" loading="lazy"></div>
+      <div class="item"><img src="Events/Event7.jpeg" alt="Event" loading="lazy"></div>
+      <div class="item"><img src="Events/Event8.jpeg" alt="Event" loading="lazy"></div>
+      <div class="item"><img src="Events/Event9.jpeg" alt="Event" loading="lazy"></div>
+      <div class="item"><img src="Events/Event10.jpeg" alt="Event" loading="lazy"></div>
+      <div class="item"><img src="Events/Event11.jpeg" alt="Event" loading="lazy"></div>
+      <div class="item"><img src="Events/Event12.jpeg" alt="Event" loading="lazy"></div>
     </div>
   </section>
 
-  <section id="events-packages" class="packages-section">
+  <section id="events-packages" class="packages-section pricing-anchor">
     <h2 class="title">Events Packages</h2>
     <div class="packages-content">
       <div class="pricing-grid">
@@ -557,30 +622,30 @@
   <section id="wedding-portfolio">
     <h2 class="title">Wedding Gallery</h2>
     <div class="portfolio">
-      <div class="item"><img src="Wedding/Wedding1.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Wedding/Wedding6.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Wedding/Wedding7.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Wedding/Wedding3.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Wedding/Wedding8.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_8013.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_8075.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_8069.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_8044.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_8026.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_8033.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_8083.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_7153.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_7099.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_7231.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_7138.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_6279.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_5647.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Wedding/Wedding5.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_9816.JPG" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_9840.JPG" alt="Wedding"></div>
-      <div class="item"><img src="Wedding/Wedding2.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Wedding/Wedding4.jpg" alt="Wedding"></div>
-      <div class="item"><img src="Images/IMG_4676.jpg" alt="Wedding"></div>
+      <div class="item"><img src="Wedding/Wedding1.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Wedding/Wedding6.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Wedding/Wedding7.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Wedding/Wedding3.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Wedding/Wedding8.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_8013.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_8075.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_8069.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_8044.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_8026.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_8033.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_8083.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_7153.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_7099.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_7231.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_7138.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_6279.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_5647.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Wedding/Wedding5.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_9816.JPG" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_9840.JPG" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Wedding/Wedding2.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Wedding/Wedding4.jpg" alt="Wedding" loading="lazy"></div>
+      <div class="item"><img src="Images/IMG_4676.jpg" alt="Wedding" loading="lazy"></div>
     </div>
   </section>
   <section id="wedding-cinema">
@@ -626,7 +691,7 @@
     </div>
   </section>
 
-  <section id="wedding-packages" class="packages-section">
+  <section id="wedding-packages" class="packages-section pricing-anchor">
     <h2 class="title">Wedding Package</h2>
     <div class="packages-content" style="text-align: center;">
 
@@ -699,16 +764,104 @@
     </div>
   </section>
 
+  <section id="contact" class="contact-section">
+    <div class="section-heading">
+      <p class="eyebrow">LET'S CREATE SOMETHING</p>
+      <h2 class="title">Book Wolfy Image Studios</h2>
+      <p class="section-intro">Ready to plan your shoot or event? Send us a WhatsApp message and tell us what you need.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card"><span>📍</span><h3>Visit Us</h3><p>Jordan Building, 2nd Floor (Parking Area)<br>Maimahiu, Kenya</p></div>
+      <div class="contact-card"><span>💬</span><h3>WhatsApp</h3><p>Fastest way to book a session or ask about availability.</p><a class="contact-btn" href="https://api.whatsapp.com/send?phone=254706483664&text=Hello%20Wolfy%20Image%20Studios!%20I%20would%20like%20to%20make%20an%20inquiry." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></div>
+      <div class="contact-card"><span>🕒</span><h3>Plan Ahead</h3><p>For weddings and events, contact us early so we can discuss your date and coverage needs.</p></div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+    <img id="lightbox-image" src="" alt="Expanded portfolio image" loading="lazy">
+    <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+    <div id="lightbox-counter" class="lightbox-counter"></div>
+  </div>
+
   <footer>
     <a href="https://api.whatsapp.com/send?phone=254706483664&text=Hello%20Wolfy%20Image%20Studios!%20I%20would%20like%20to%20book%20a%20session."
       target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
       Book Now
     </a>
-    <p>Location: Jordan building,2nd floor(Parking area),Maimahiu, Kenya</p>
-    <p>&copy; 2026 Wolfy Image Studios</p>
+    <div class="footer-main">
+      <div><strong>Wolfy Image Studios</strong></div>
+      <div><strong>Quick Links</strong><p><a href="#services">Services</a> · <a href="#featured-work">Portfolio</a> · <a href="#pricing">Pricing</a> · <a href="#contact">Contact</a></p></div>
+      <div><strong>Location</strong><p>Jordan Building, 2nd Floor (Parking Area), Maimahiu, Kenya</p></div>
+    </div>
+    <p>&copy; 2026 Wolfy Image Studios. All rights reserved.</p>
     <p class="dev-credit">Website crafted by <a href="https://k1manii.github.io/Services-/" target="_blank" rel="noopener noreferrer" class="dev-link">Kimanii Web Solutions</a></p>
   </footer>
   <script>
+
+    // Portfolio lightbox + mobile navigation
+    document.addEventListener("DOMContentLoaded", function () {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('#nav-menu');
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function () {
+          const open = navMenu.classList.toggle('open');
+          navToggle.setAttribute('aria-expanded', String(open));
+        });
+        navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }));
+      }
+
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+      const counter = document.getElementById('lightbox-counter');
+      const closeBtn = document.querySelector('.lightbox-close');
+      const prevBtn = document.querySelector('.lightbox-prev');
+      const nextBtn = document.querySelector('.lightbox-next');
+      const galleryImages = Array.from(document.querySelectorAll('.portfolio img'));
+      let currentIndex = 0;
+
+      function showImage(index) {
+        if (!galleryImages.length) return;
+        currentIndex = (index + galleryImages.length) % galleryImages.length;
+        const img = galleryImages[currentIndex];
+        lightboxImage.src = img.currentSrc || img.src;
+        lightboxImage.alt = img.alt || 'Wolfy Image Studios portfolio image';
+        counter.textContent = `${currentIndex + 1} / ${galleryImages.length}`;
+      }
+      function openLightbox(index) {
+        showImage(index);
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('lightbox-open');
+      }
+      function closeLightbox() {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('lightbox-open');
+        lightboxImage.src = '';
+      }
+      galleryImages.forEach((img, index) => {
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('role', 'button');
+        img.addEventListener('click', () => openLightbox(index));
+        img.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(index); } });
+      });
+      closeBtn?.addEventListener('click', closeLightbox);
+      prevBtn?.addEventListener('click', () => showImage(currentIndex - 1));
+      nextBtn?.addEventListener('click', () => showImage(currentIndex + 1));
+      lightbox?.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+      document.addEventListener('keydown', e => {
+        if (!lightbox.classList.contains('open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
+        if (e.key === 'ArrowRight') showImage(currentIndex + 1);
+      });
+    });
+
     document.addEventListener("DOMContentLoaded", function () {
       const videos = document.querySelectorAll('.scroll-video');
       const playButtons = document.querySelectorAll('.play-btn');
@@ -779,57 +932,14 @@
         observer.observe(video);
       });
     });
-
-    // Preloader Script
-    // Preloader Script
+     // Fast, non-blocking preloader
     window.addEventListener("load", function () {
-      initPreloader();
+      const preloader = document.getElementById("preloader");
+      if (!preloader) return;
+      preloader.classList.add("preloader-hide");
+      setTimeout(() => preloader.remove(), 600);
     });
 
-    // Fallback in case 'load' event doesn't fire fast enough
-    setTimeout(function() {
-      initPreloader();
-    }, 4000); // 4 seconds max wait time
-
-    let preloaderInitialized = false;
-    
-    function initPreloader() {
-      if (preloaderInitialized) return;
-      preloaderInitialized = true;
-
-      const preloader = document.getElementById("preloader");
-      const minDisplayTime = 2000; // 2 seconds
-      
-      // Calculate how much time has passed since the page started loading?
-      // Actually, we want to guarantee *at least* 2s from now? 
-      // Or 2s from page open? The original code waited 2s AFTER load event (which was weird if load was fast)
-      // or waited 2s total? 
-      // Original code: window.addEventListener("load", ... setTimeout(..., 2000))
-      // This means it waited 2s AFTER everything loaded. That's a long time.
-      // Let's change it to be smoother: Ensure it stays for 2s TOTAL from page start, 
-      // but since we can't easily track page start in a simple script repeatedly,
-      // let's stick to the user's apparent intent: "set it to open the webpage after 2seconds"
-      
-      // Let's try to act immediately if 2s has already passed, or wait the difference.
-      // Only problem is we don't know exactly when the page started.
-      
-      // Simpler approach that respects the user's specific request "open after 2seconds":
-      // We will wait 2s from this specific call execution point to be safe and consistent with previous behavior,
-      // BUT we also have the fallback above calling this.
-      
-      // To prevent 'double waiting' if the fallback triggers first, let's just use a fixed small delay 
-      // if the load is super fast, but if it was slow (triggered by fallback), hide immediately.
-      
-      // Actually, looking at the user's request: "open the webpage after 2seconds".
-      // Let's wait 2s.
-      
-      setTimeout(function() {
-        preloader.style.opacity = "0";
-        setTimeout(function () {
-          preloader.style.display = "none";
-        }, 500);
-      }, 2000);
-    }
   </script>
 </body>
 
